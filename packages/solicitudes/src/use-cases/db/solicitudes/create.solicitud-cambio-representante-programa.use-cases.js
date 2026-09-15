@@ -67,6 +67,7 @@ const createCambioRepresentanteSolicitudPrograma = (
     folio: folioSolcitud,
     tipoSolicitudId: 4,
     estatusSolicitudId: 1,
+    usuarioId: data.usuarioId,
   };
 
   const newSolicitud = await createSolicitudProgramaQuery({

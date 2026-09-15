@@ -67,6 +67,7 @@ const createActualizacionSolicitudPrograma = (
     folio: folioSolcitud,
     tipoSolicitudId: 5,
     estatusSolicitudId: 1,
+    usuarioId: data.usuarioId,
   };
 
   const newSolicitud = await createSolicitudProgramaQuery({
