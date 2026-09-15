@@ -71,7 +71,9 @@ async function createSolicitudPrograma(req, reply) {
         );
         break;
       default:
-        break;
+        throw boom.badRequest(
+          '[solicitudes]: El tipo de solicitud no es válido o no fue proporcionado',
+        );
     }
 
     const usuarioId = solicitud?.dataValues?.usuarioId || data.usuarioId;
